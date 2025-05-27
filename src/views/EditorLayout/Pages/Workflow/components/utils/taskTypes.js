@@ -1,0 +1,11 @@
+export const WORKFLOWS_TASK_START = "StartTask";
+export const WORKFLOWS_TASK_END = "EndTask";
+export const WORKFLOWS_TASK_SCREEN = "ScreenTask";
+export const WORKFLOWS_TASK_MAIL = "MailTask";
+export const WORKFLOWS_TASK_DATA = "DataTask";
+export const WORKFLOWS_TASK_APPROVAL = "ApprovalTask";
+export const WORKFLOWS_TASK_COMPUTATION = "ComputationTask";
+export const WORKFLOWS_TASK_CALENDAR = "CalendarTask";
+export const WORKFLOWS_TASK_DOCUMENT = "DocumentTask";
+export const WORKFLOWS_TASK_PAYMENT = "PaymentTask";
+export const WORKFLOWS_TASK_CUSTOM = "CustomTask";

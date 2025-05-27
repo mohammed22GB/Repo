@@ -1,0 +1,6 @@
+{
+  "compilerOptions": {
+    "types": ["./types/index.d.ts"]
+  },
+  "include": ["./e2e/*.cy.js", "./components/*.cy.js"]
+}

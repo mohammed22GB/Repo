@@ -1,0 +1,13 @@
+export { default as Signup } from "./Signup";
+export { default as SignupDetail } from "./SignupDetail/index";
+export { default as Welcome } from "./Welcome";
+export { default as Administration } from "./Administration";
+export { default as ForgotPassword } from "./ForgotPassword/ForgotPassword";
+export { default as Login } from "./Login";
+export { default as VerifyOTP } from "./VerifyOTP";
+export { default as ResetPassword } from "./ResetPassword";
+export { default as Download } from "./Download";
+export { default as Apps } from "./Apps";
+export { default as AppTemplates } from "./AppTemplates";
+export { default as DashboardEditor } from "./Dashboards/pages/DashboardEditor";
+export { default as DashboardsList } from "./Dashboards/pages/DashboardsList";

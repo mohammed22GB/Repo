@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico?v=2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Transform your business with no-code automations."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+    />
+    <link
+      rel="manifest"
+      crossorigin="use-credentials"
+      href="%PUBLIC_URL%/manifest.json"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://apis.google.com/js/api.js"
+    ></script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script src="./service-worker-register.js" defer></script>
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+    <!-- <link
+      href="https://db.onlinewebfonts.com/c/3dad38b96d1a28deaba765fa3a16697f?family=GT+Eesti+Pro+Text"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <style>
+      /* .custom-loader {
+        width:120px;
+        height:5px;
+        -webkit-mask:linear-gradient(90deg,#766DF4 70%,#0000 0) left/20% 100%;
+        mask:linear-gradient(90deg,#766DF4 70%,#0000 0) left/20% 100%;
+        background:
+        linear-gradient(#766DF4 0 0) left -25% top 0 /20% 100% no-repeat
+        #E4E4ED;
+        animation:ct7 1s infinite steps(6);
+      }
+      @keyframes ct7 {
+          100% {background-position: right -25% top 0}
+      } */
+      .app-preloader {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .logo {
+        font-size: 42px;
+        margin-top: -100px;
+        margin-bottom: 40px;
+      }
+      .loader-subtext {
+        font-family: monospace;
+        font-size: 12px;
+        margin-bottom: 30px;
+      }
+      .custom-loader {
+        height: 3px;
+        width: 200px;
+        background:
+          /* linear-gradient(#2457c1 0 0),
+          linear-gradient(#2457c1 0 0), */ linear-gradient(
+            #179c98 0 0
+          ),
+          linear-gradient(#179c98 0 0), #e4e4ed;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+        animation: p6 3s infinite;
+      }
+
+      @keyframes p6 {
+        0% {
+          background-position: -150% 0, -150% 0;
+        }
+        66% {
+          background-position: 250% 0, -150% 0;
+        }
+        100% {
+          background-position: 250% 0, 250% 0;
+        }
+      }
+    </style>
+
+    <title>Plug</title>
+  </head>
+  <body style="font-size: 12px">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="app-preloader">
+        <img
+          src="https://res.cloudinary.com/dfjtgxhjg/image/upload/v1708437657/qt8jpvxe5w10d0tp9fun.svg"
+          alt="PLUG"
+          class="logo"
+          width="100"
+        />
+        <div class="custom-loader"></div>
+      </div>
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+    <script
+      src="https://cdn.rawgit.com/abdennour/react-csv/6424b500/cdn/react-csv-latest.min.js"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>

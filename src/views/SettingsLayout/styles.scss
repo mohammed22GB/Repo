@@ -1,0 +1,25 @@
+.app {
+  margin: 5px;
+  padding: 5px;
+  height: 100%;
+
+  .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .elements_container {
+    width: 30%;
+
+    .elements {
+
+      user-select: none;
+      width: 100px;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+    }
+  }
+
+}

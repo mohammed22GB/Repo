@@ -1,0 +1,52 @@
+users: {
+    id: { type: String, unique: true, required: true },
+    firstName: { type: String, required: true },
+    lastName: { type: String, required: true },
+    mobile: { type: String, required: true },
+    businessRole: { type: String, required: true },
+    orgName: { type: String, required: true },
+    industry: { type: String, required: true },
+    employees: { type: String, required: true },
+    subscribe: { type: Boolean, required: true },
+    policy: { type: Boolean, required: true },
+    country: { type: String, required: true },
+    createdBy: { type: String, required: true },
+    created: { type: Date, required: true },
+    updatedAt: { type: Date, required: true },
+}
+
+apps: { type: {
+    orgId: { type: String, required: true },
+    updatedAt: { type: Date, required: true },
+    createdBy:String, required: true },
+    name: { type: String, required: true },
+    created: { type: Date, required: true },
+    description: { type: String, required: true },
+    workflow: { type: Object, required: true }, 
+    dataSource: { type: Object, required: true },
+    id: { type: String, unique: true, required: true },
+    category: { type: String, required: true },
+    active: { type: Boolean, required: true },
+}
+
+screens: {
+   "app-container-e5040340-2a41-4a1b-92c1-7ff374e4cb1f":[
+      {
+         type: { type: String, required: true },
+         active: { type: Boolean, required: true },
+         id: { type: String, unique: true, required: true },
+         label: { type: Object, required: true },
+         icon: { type: String, required: true },
+         pos: { type: Object, required: true },
+         title: { type: String, required: true },
+         parent: { type: String, required: true },
+         style:{
+            label: { type: Object, required: true },
+            values: { type: Object, required: true },
+            dimensions: { type: Object, required, true }
+         },
+         default: { type: Boolean, required: true },
+         text: { type: Object, required: false }
+      },
+   ]
+}

@@ -1,0 +1,116 @@
+export const msalConfig = {
+  auth: {
+    clientId: process.env.REACT_APP_MICROSOFT_APPID,
+    authority: process.env.REACT_APP_MICROSOFT_AUTHORITY,
+    redirectUri: `${process.env.REACT_APP_BASE_URL}/login`,
+  },
+  cache: {
+    cacheLocation: "sessionStorage", // This configures where your cache will be stored
+    storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+  },
+};
+
+// Add scopes here for ID token to be used at Microsoft identity platform endpoints.
+export const loginRequest = {
+  scopes: ["User.Read"],
+  prompt: "login",
+};
+
+// Add scopes here for ID token to be used at Microsoft identity platform endpoints.
+export const consentRequest = {
+  scopes: ["User.Read", "Calendars.Read", "Files.ReadWrite"],
+  // scopes: ["User.Read.All", "Directory.ReadWrite.All"],
+  prompt: "select_account",
+};
+
+export const microsoftScopesList = [
+  { name: "Application.Read.All", consentType: "ADMIN" },
+  { name: "Application.ReadWrite.All", consentType: "ADMIN" },
+  { name: "AppRoleAssignment.ReadWrite.All", consentType: "ADMIN" },
+  { name: "Calendars.Read", consentType: "" },
+  { name: "Calendars.Read.Shared", consentType: "" },
+  { name: "Calendars.ReadBasic", consentType: "ADMIN" },
+  { name: "Calendars.ReadWrite", consentType: "" },
+  { name: "Calendars.ReadWrite.Shared", consentType: "" },
+  { name: "Channel.Create", consentType: "ADMIN" },
+  { name: "Channel.ReadBasic.All", consentType: "ADMIN" },
+  { name: "ChannelMessage.Read.All", consentType: "ADMIN" },
+  { name: "ChannelMessage.Send", consentType: "ADMIN" },
+  { name: "ChannelSettings.Read.All", consentType: "ADMIN" },
+  { name: "ChannelSettings.ReadWrite.All", consentType: "ADMIN" },
+  { name: "Chat.Create", consentType: "ADMIN" },
+  { name: "Chat.ReadWrite", consentType: "ADMIN" },
+  { name: "ChatMessage.Send", consentType: "ADMIN" },
+  { name: "Contacts.Read", consentType: "" },
+  { name: "Contacts.ReadWrite", consentType: "" },
+  { name: "Device.Read.All", consentType: "ADMIN" },
+  { name: "DeviceManagementApps.Read.All", consentType: "ADMIN" },
+  { name: "DeviceManagementApps.ReadWrite.All", consentType: "ADMIN" },
+  { name: "DeviceManagementConfiguration.Read.All", consentType: "ADMIN" },
+  { name: "DeviceManagementConfiguration.ReadWrite.All", consentType: "ADMIN" },
+  { name: "DeviceManagementManagedDevices.Read.All", consentType: "ADMIN" },
+  {
+    name: "DeviceManagementManagedDevices.ReadWrite.All",
+    consentType: "ADMIN",
+  },
+  { name: "DeviceManagementServiceConfig.Read.All", consentType: "ADMIN" },
+  { name: "DeviceManagementServiceConfig.ReadWrite.All", consentType: "ADMIN" },
+  { name: "Directory.Read.All", consentType: "ADMIN" },
+  { name: "Directory.ReadWrite.All", consentType: "ADMIN" },
+  { name: "Files.Read", consentType: "" },
+  { name: "Files.Read.All", consentType: "" },
+  { name: "Files.ReadWrite", consentType: "" },
+  { name: "Files.ReadWrite.All", consentType: "" },
+  { name: "Group.Read.All", consentType: "ADMIN" },
+  { name: "Group.ReadWrite.All", consentType: "ADMIN" },
+  { name: "GroupMember.Read.All", consentType: "ADMIN" },
+  { name: "GroupMember.ReadWrite.All", consentType: "ADMIN" },
+  { name: "IdentityRiskEvent.Read.All", consentType: "ADMIN" },
+  { name: "IdentityRiskyUser.Read.All", consentType: "ADMIN" },
+  { name: "Mail.Read", consentType: "" },
+  { name: "Mail.ReadBasic", consentType: "" },
+  { name: "Mail.ReadWrite", consentType: "ADMIN" },
+  { name: "Mail.Send", consentType: "" },
+  { name: "MailboxSettings.Read", consentType: "" },
+  { name: "Notes.Create", consentType: "" },
+  { name: "Notes.Read", consentType: "" },
+  { name: "Notes.Read.All", consentType: "" },
+  { name: "Notes.ReadWrite", consentType: "" },
+  { name: "Notes.ReadWrite.All", consentType: "" },
+  { name: "Notifications.ReadWrite.CreatedByApp", consentType: "" },
+  { name: "People.Read", consentType: "" },
+  { name: "People.Read.All", consentType: "ADMIN" },
+  { name: "Policy.Read.All", consentType: "ADMIN" },
+  { name: "Policy.ReadWrite.ApplicationConfiguration", consentType: "ADMIN" },
+  { name: "Presence.Read", consentType: "" },
+  { name: "Presence.Read.All", consentType: "" },
+  { name: "Sites.FullControl.All", consentType: "ADMIN" },
+  { name: "Sites.Manage.All", consentType: "" },
+  { name: "Sites.Read.All", consentType: "" },
+  { name: "Sites.ReadWrite.All", consentType: "" },
+  { name: "Tasks.Read", consentType: "" },
+  { name: "Tasks.ReadWrite", consentType: "" },
+  { name: "Team.Create", consentType: "ADMIN" },
+  { name: "Team.ReadBasic.All", consentType: "ADMIN" },
+  { name: "TeamsAppInstallation.ReadForTeam", consentType: "ADMIN" },
+  { name: "TeamsAppInstallation.ReadWriteForTeam", consentType: "ADMIN" },
+  { name: "TeamsAppInstallation.ReadWriteSelfForTeam", consentType: "ADMIN" },
+  { name: "TeamSettings.Read.All", consentType: "ADMIN" },
+  { name: "TeamSettings.ReadWrite.All", consentType: "ADMIN" },
+  { name: "TeamsTab.Read.All", consentType: "ADMIN" },
+  { name: "TeamsTab.ReadWrite.All", consentType: "ADMIN" },
+  { name: "TeamsTab.ReadWriteForTeam", consentType: "ADMIN" },
+  { name: "TeamsTab.ReadWriteSelfForTeam", consentType: "ADMIN" },
+  { name: "User.EnableDisableAccount.All", consentType: "ADMIN" },
+  { name: "User.ManageIdentities.All", consentType: "ADMIN" },
+  { name: "User.Read", consentType: "" },
+  { name: "User.Read.All", consentType: "ADMIN" },
+  { name: "User.ReadBasic.All", consentType: "" },
+  { name: "User.ReadWrite", consentType: "" },
+  { name: "User.ReadWrite.All", consentType: "ADMIN" },
+];
+
+// Add the endpoints here for Microsoft Graph API services you'd like to use.
+export const graphConfig = {
+  graphMeEndpoint: "https://graph.microsoft.com/v1.0/me",
+};

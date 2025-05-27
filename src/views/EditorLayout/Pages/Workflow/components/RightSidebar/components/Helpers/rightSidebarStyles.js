@@ -1,0 +1,237 @@
+export const useStyles = (makeStyles) => {
+  return makeStyles((theme) => ({
+    sideHeading: {
+      color: "#091540",
+      // fontWeight: 600,
+      fontSize: 11,
+      paddingLeft: 10,
+      paddingTop: 10,
+      textTransform: "capitalize",
+      display: "inline-flex",
+      alignItems: "center",
+    },
+    extraRightPaddingInput: {
+      paddingRight: 84,
+      height: 36.5,
+    },
+    divider: {
+      marginTop: 15,
+      marginBottom: 15,
+    },
+    section: {
+      padding: 10,
+      paddingBottom: 20,
+    },
+    container: {
+      overflow: "hidden",
+      height: "100%",
+      "&:hover": {
+        overflow: "overlay",
+      },
+    },
+    actionsListItem: {
+      width: "30%",
+      height: 80,
+      margin: 5,
+      display: "inline-block",
+      textAlign: "center",
+      backgroundColor: "white",
+      border: "solid 1px white",
+      boxShadow: "1px 1px 3px #ccc",
+      borderRadius: 10,
+      "&:hover": {
+        cursor: "pointer",
+        backgroundColor: "#fafafa",
+        border: "solid 1px #eaeaea",
+        boxShadow: "none",
+        color: "#1846c8",
+      },
+    },
+    closeIcon: {
+      fontSize: 16,
+      color: "#AAAAAA",
+      marginRight: 10,
+      cursor: "pointer",
+      "&:hover": {
+        color: "#091540",
+      },
+    },
+    sectionTitle: {
+      color: "#5b6994",
+      fontSize: 12,
+      // marginBottom: 5,
+      fontWeight: 600,
+    },
+    sectionTitleError: {
+      color: "#e41919",
+      fontSize: 12,
+      marginBottom: 5,
+    },
+    input: {
+      color: "#091540",
+      fontSize: 12,
+      marginBottom: 12,
+    },
+    select: {
+      color: "#091540",
+      fontSize: 12,
+      padding: 10,
+    },
+    switchLabel: {
+      width: "100%",
+      justifyContent: "space-between",
+      margin: 0,
+    },
+    matchingFields: {
+      borderRadius: 5,
+      border: "dashed 1.5px #999",
+      padding: "10px 5px 10px 10px",
+      backgroundColor: "#f8f8f8",
+      marginTop: 7,
+    },
+    mappingTitle: {
+      fontSize: 12,
+      flex: 1,
+      color: "#f7a712",
+      display: "flex",
+      justifyContent: "space-between",
+    },
+    pair: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      marginBottom: 10,
+      "& > div, & > p": {
+        flex: 1,
+        "&:first-child": {
+          marginRight: 5,
+        },
+      },
+    },
+    multiSelect: {
+      display: "flex",
+      flexWrap: "wrap",
+    },
+    selectedFields: {
+      backgroundColor: "#f8f8f8",
+      marginRight: 5,
+      marginBottom: 5,
+      padding: 5,
+      border: "dashed 1px #999",
+      borderRadius: 8,
+      color: "#888",
+    },
+    sideHeadingBar: {
+      backgroundColor: "#f8f8f8",
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-between",
+      alignItems: "center",
+      cursor: "pointer",
+      height: 29,
+      "&:hover": {
+        opacity: 0.7,
+      },
+    },
+    sectionEntry: {
+      paddingBottom: 13,
+    },
+    addMatch: {
+      fontSize: 20,
+      boxShadow: "0px 2px 3px #aaa",
+      borderRadius: "14%",
+      marginTop: 10,
+    },
+    menuSubs: {
+      fontSize: "0.8em",
+      color: "#0c7b93",
+      fontWeight: "normal",
+    },
+    selected: {
+      "& span": {
+        display: "none",
+      },
+    },
+    plusIcon: {
+      position: "absolute",
+      right: "0px",
+      marginRight: "8px",
+      fontSize: "21px",
+      cursor: "pointer",
+    },
+
+    floatFieldOnSteriod: {
+      width: "70px",
+      height: "inherit",
+      position: "absolute",
+      right: "0%",
+      bottom: "6%",
+      // backgroundColor: "red",
+    },
+    reuseableScreenBadge: {
+      fontSize: 9,
+      backgroundColor: "#204dab",
+      color: "#fff",
+      height: 13,
+      padding: "0 3px",
+      textAlign: "center",
+      borderRadius: 3,
+      marginRight: 5,
+      border: "outset 1px",
+      display: "flex",
+      alignItems: "center",
+    },
+    input2: {
+      color: "#091540",
+      fontSize: 12,
+      marginBottom: 0,
+    },
+    selectPadding: {
+      padding: "10.5px 14px",
+    },
+    reusableFieldLine: {
+      display: "flex",
+      alignItems: "center",
+      padding: "0 5px 0 10px",
+      "&:hover": {
+        backgroundColor: "#f7f7f7",
+      },
+    },
+    rowAlignment: {
+      display: "flex",
+      justifyContent: "space-between",
+      marginTop: 10,
+      alignItems: "center",
+      "& > *": {
+        width: "40%",
+        marginBottom: 0,
+        marginLeft: 5,
+      },
+      "& > *:first-child": {
+        width: "25%",
+        marginLeft: 0,
+      },
+    },
+    inlineSelect2: {
+      minHeight: 25,
+      position: "absolute",
+      right: 20,
+      top: 5,
+      minWidth: 56,
+      color: "#091540",
+      // boxShadow: "0px 0px 2px gray",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      padding: "0px !important",
+      backgroundColor: "#fff",
+      zIndex: 30,
+      fontSize: 10,
+      textAlign: "center",
+      opacity: 0.7,
+      "& > fieldset": {
+        borderStyle: "dotted",
+      },
+    },
+  }))();
+};

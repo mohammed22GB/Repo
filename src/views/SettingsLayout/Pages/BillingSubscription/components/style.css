@@ -1,0 +1,113 @@
+.metrics-main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 13px;
+  font-weight: 300;
+}
+.metrics-section {
+  position: relative;
+  border: solid 1px #ccc;
+  background-color: #f8f8f8;
+  padding: 20px;
+  padding-top: 30px;
+}
+.metrics-section ._flexCol{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.metrics-section ._flexCol span {
+  color: #0C7B93;
+  font-weight: 600;
+}
+.metrics-section-header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: 0 20px;
+  top: -17px;
+  background-color: #e9f2f4;
+  padding: 7px 15px;
+  min-width: 110px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.metrics-section-header .tier {
+  padding: 5px 15px;
+  border: solid 1px;
+  border-radius: 3px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.metrics-section-header .status {
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  margin-right: -10px;
+  text-transform: capitalize;
+  font-weight: 600;
+  text-shadow: 0 0 black;
+  margin-left: 5px;
+}
+.metrics-section-header .status.active {
+  background: #4eb64e;
+}
+.metrics-section-header .status.inactive {
+  background: #e7bc2e;
+  color: black;
+}
+.metrics-table ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.metrics-table-header.metrics-table-row {
+  margin-bottom: 5px;
+  background-color: #e8e8e8;
+  font-weight: 600;
+  border-radius: 5px;
+}
+ul.metrics-table-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+ul.metrics-table-row {
+  display: flex;
+  padding: 8px 13px;
+}
+.metrics-table li.row-col-1 {
+  flex: 1
+}
+.metrics-table li.row-col-2 {
+  flex: 3;
+}
+.metrics-table li.row-col-3 {
+  flex: 3;
+  text-align: center;
+}
+.metrics-table li.row-col-4 {
+  flex: 3;
+  text-align: center;
+}
+.metrics-table li.row-col-5 {
+  flex: 3
+}
+.metrics-table .guage-text {
+  background-color: white;
+  width: 22px;
+  height: 16px;
+  font-size: 9px;
+  border: solid 0.5px #aaa;
+  /* box-shadow: 0 0 2px black; */
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: -4px;
+  position: absolute;
+  margin-left: -11px;
+  line-height: 16px;
+  /* font-weight: 600; */
+}
+

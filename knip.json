@@ -1,0 +1,7 @@
+{
+  "entry": ["src/Root.js!"],
+  "project": [
+    "src/views/**/*.{js,jsx,ts,tsx}!",
+    "!src/__test__/**/*.{js,jsx,ts,tsx}!"
+  ]
+}

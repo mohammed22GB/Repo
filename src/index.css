@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: "Inter";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.Toastify__toast--success {
+  background: #016b3fc7 !important;
+  justify-content: center !important;
+}
+
+.Toastify__toast--error {
+  background: #850000c7 !important;
+  justify-content: center !important;
+}
+
+.Toastify__toast-body {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+}
+
+.Toastify__toast {
+  border-radius: 5px !important;
+  padding: 4px !important;
+  min-height: 50px !important;
+}
+.react-pdf__Page__textContent,
+.textLayer {
+  display: none !important;
+}
+.react-pdf__Page__annotations,
+.annotationLayer {
+  display: none;
+}

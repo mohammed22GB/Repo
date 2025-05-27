@@ -1,0 +1,8 @@
+export const FETCH_DATA_OWNER = "FETCH_DATA_OWNER";
+export const ADD_COLUMN = "ADD_COLUMN";
+export const SHOW_FIELD = "SHOW_FIELD";
+export const SHOW_COLUMNBOX = "SHOW_COLUMNBOX";
+export const SET_DATA_COLUMN = "SET_DATA_COLUMN";
+export const ADD_TO_DATA_COLUMN = "ADD_TO_DATA_COLUMN";
+export const SET_DATA_NAMES = "SET_DATA_NAMES";
+export const SET_DATA_PERMS = "SET_DATA_PERMS";

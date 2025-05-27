@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app # Map local directory to the container
+      - /app/node_modules # Prevent node_modules conflicts
+    environment:
+      - CHOKIDAR_USEPOLLING=true # Enable live updates for files in Docker on some systems
+    command: yarn start # Override the default CMD for live updates
