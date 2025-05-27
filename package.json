@@ -136,7 +136,7 @@
     "eject": "react-scripts eject",
     "generate-meta-tag": "node ./node_modules/react-cache-buster/dist/generate-meta-tag.js",
     "start:docker": "docker compose up",
-    "prepare": "husky",
+    "prepare": "if [ \"$NETLIFY\" != \"true\" ]; then husky install; fi",
     "knip": "knip --production --files"
   },
   "jest": {
