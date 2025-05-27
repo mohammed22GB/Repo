@@ -4,8 +4,8 @@
   status = 200
 
 [build]
-  command = "npm install typescript --legacy-peer-deps && NODE_OPTIONS='--max_old_space_size=4096' npm run build"
-  publish = "build"
+command = "npm install typescript --legacy-peer-deps && npm run build"
+publish = "build"
 
 [build.environment]
   NODE_OPTIONS = "--max_old_space_size=4096"
