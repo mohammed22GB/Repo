@@ -20,5 +20,3 @@ publish = "build"
 
   [context.production.environment]
   NODE_ENV = "development"
-
-  ​
