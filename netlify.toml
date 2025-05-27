@@ -4,7 +4,7 @@
   status = 200
 
 [build]
-  command = "npm install typescript && npm run build"
+  command = "npm install typescript --legacy-peer-deps && npm run build"
   publish = "build"
 
 [build.environment]
