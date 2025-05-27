@@ -12,6 +12,8 @@ publish = "build"
   NODE_VERSION = "18"
   NODE_ENV = "development"
    CI = "false"
+  SECRETS_SCAN_OMIT_KEYS = "REACT_APP_GOOGLE_CLIENTID,REACT_APP_RECAPTCHA_SITE_KEY"
+
 
 [build.processing]
   skip_processing = true  
