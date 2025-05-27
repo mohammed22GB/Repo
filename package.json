@@ -128,7 +128,7 @@
   "scripts": {
     "start": "react-scripts --max_old_space_size=4096 start",
     "build:dev": "dotenv -e .env.development react-scripts build",
-    "build": "npm run generate-meta-tag && react-scripts --max_old_space_size=8192 build",
+    "build": "npm run generate-meta-tag && react-scripts --max_old_space_size=4096 build",
     "eslint": "eslint ./src --ext .js,.jsx --ignore-pattern node_modules/",
     "test": "react-scripts test --verbose=true",
     "test:preview": "jest-preview",

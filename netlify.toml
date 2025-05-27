@@ -3,5 +3,13 @@
   to = "/index.html"
   status = 200
 
+[build]
+  command = "npm run build"
+  publish = "build"
+
 [build.environment]
   NODE_OPTIONS = "--max_old_space_size=4096"
+  NODE_VERSION = "18"
+
+[build.processing]
+  skip_processing = true
